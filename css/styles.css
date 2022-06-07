@@ -151,8 +151,17 @@ img {
 .hero {
   background: var(--second-title-color);
   padding: 200px 0;
+  max-width: 1600px;
+  min-height: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4));
+  background-image: url(../img/Imgcomp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
+ 
 .porfolio {
   background: var(--main-title-color);
   padding: 20px;
