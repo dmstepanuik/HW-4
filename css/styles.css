@@ -398,6 +398,7 @@ li > .all {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-title-color);
+  margin-bottom: 30px;
 }
 
 .team-item:first-child {
@@ -418,6 +419,25 @@ li > .all {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+
+}
+
+.team-soc-item:not(:last-child){
+  margin: left 10px;;
+}
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  background-color: var(--accent-color)
+}
+
+
 /* -------------FOOTER----------------- */
 .footer {
   background-color: var(--second-title-color);
