@@ -524,31 +524,26 @@ li > .all {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
-  align-content: center;
-  justify-content: center;
   color: var(--btn-color);
   margin-bottom: 20px;
 }
 .footer-soc-item:not(:last-child) {
-  margin: left 10px;
+  margin-right: 10px;
 }
+
 .footer-soc-link {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.footer-soc-icon {
-  background-color: var(--btn-soc);
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-soc-icon {
+  fill: var(--btn-color);
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--accent-color);
-}
-.footer-soc-link:hover .team-soc-icon,
-.footer-soc-link:focus .team-soc-icon {
-  fill: var(--btn-color);
 }
