@@ -7,6 +7,7 @@
   --accent-color: #2196f3;
   --typical-margin: 20px;
   --fifth-title-color: #eee;
+  --btn-soc: #afb1b8;
 }
 
 p,
@@ -41,7 +42,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  
 }
 .section {
   padding-top: 94px;
@@ -145,6 +145,12 @@ img {
 .current {
   color: var(--accent-color);
 }
+.icon-mail,
+.icon-mb {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
 
 /* --------------------HERO------------ */
 
@@ -155,12 +161,13 @@ img {
   min-height: 480px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Imgcomp.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/Imgcomp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
- 
+
 .porfolio {
   background: var(--main-title-color);
   padding: 20px;
@@ -294,7 +301,6 @@ li > .all {
 
 /* ---------CHARACTERISTICS----------- */
 
-
 .characteristics-title {
   font-weight: 700;
   font-size: 14px;
@@ -322,9 +328,9 @@ li > .all {
 }
 
 /* ---------ABOUT---------------- */
- .about{
-   padding-bottom: 94px;
- }
+.about {
+  padding-bottom: 94px;
+}
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -333,7 +339,6 @@ li > .all {
   letter-spacing: 0.03em;
   color: var(--forth-title-color);
   margin-bottom: 50px;
-   
 }
 
 .about-item:first-child {
@@ -350,7 +355,7 @@ li > .all {
 }
 
 /* ---------------TEAM--------------- */
-.box-team-name{
+.box-team-name {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -423,27 +428,37 @@ li > .all {
 .team-soc-list {
   display: flex;
   justify-content: center;
-
+  background-color: var(--btn-color);
 }
 
-.team-soc-item:not(:last-child){
-  margin: left 10px;;
+.team-soc-item:not(:last-child) {
+  margin: left 10px;
 }
 .team-soc-link {
   width: 44px;
   height: 44px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  background-color: var(--accent-color)
 }
-
+.team-soc-icon {
+  fill: var(--btn-soc);
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--btn-color);
+}
 
 /* -------------FOOTER----------------- */
 .footer {
   background-color: var(--second-title-color);
   padding-top: 60px;
   padding-bottom: 60px;
-
 }
 .footer-title {
   font-family: 'Raleway', sans-serif;
@@ -478,7 +493,7 @@ li > .all {
   color: var(--main-title-color);
 }
 
-.contacts-item:not(:last-child){
+.contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -489,4 +504,44 @@ li > .all {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  }
+}
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  background-color: var(--btn-color);
+}
+
+.footer-conect {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.footer-soc-item:not(:last-child) {
+  margin: left 10px;
+}
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.footer-soc-icon {
+  fill: var(--btn-soc);
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-soc-link:hover .team-soc-icon,
+.footer-soc-link:focus .team-soc-icon {
+  fill: var(--btn-color);
+}
