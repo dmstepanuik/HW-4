@@ -431,7 +431,7 @@ li > .all {
   background-color: var(--btn-color);
 }
 
-.team-soc-item:not(:last-child) {
+.team-soc-list:not(:last-child) {
   margin: left 10px;
 }
 .team-soc-link {
@@ -512,8 +512,6 @@ li > .all {
 }
 
 .footer-conect {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -522,6 +520,7 @@ li > .all {
   display: flex;
   align-content: center;
   justify-content: center;
+  color: var(--btn-color);
 }
 .footer-soc-item:not(:last-child) {
   margin: left 10px;
