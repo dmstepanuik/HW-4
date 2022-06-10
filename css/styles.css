@@ -326,6 +326,18 @@ li > .all {
 .characteristics-item:not(:last-child) {
   margin-right: 30px;
 }
+.characteristics-box-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.characteristics-box-icon:not(:last-child) {
+  margin-left: 30px;
+}
 
 /* ---------ABOUT---------------- */
 .about {
