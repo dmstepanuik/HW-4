@@ -243,6 +243,16 @@ li > .all {
   color: var(--main-title-color);
 }
 
+.work-btn > .item > .work-btn:hover,
+.work-btn > .item > .work-btn:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.btn-current {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .btn-current {
   background-color: var(--accent-color);
   color: var(--main-title-color);
@@ -264,8 +274,6 @@ li > .all {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-project {
   border-bottom: 1px solid var(--fifth-title-color);
@@ -275,6 +283,12 @@ li > .all {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.portfolio-project:hover,
+.portfolio-project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .list-project {
